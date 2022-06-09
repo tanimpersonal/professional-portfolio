@@ -9,7 +9,9 @@ const Contact = () => {
           <h1>Send me a message and make something together.</h1>
         </div>
         <div className="button">
-          <button className="btn">Contact Me!</button>
+          <label for="my-modal-4" class="btn modal-button">
+            CONTACT ME!
+          </label>
         </div>
       </div>
     </div>

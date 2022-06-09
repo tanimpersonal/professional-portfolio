@@ -15,9 +15,8 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/contact" element={<ContactForm></ContactForm>}></Route>
       </Routes>
-      <div className="footer">
-        <Footer className=""></Footer>
-      </div>
+
+      <Footer></Footer>
     </div>
   );
 }
