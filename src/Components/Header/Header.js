@@ -1,4 +1,5 @@
 import React from "react";
+import ContactForm from "../ContactForm/ContactForm";
 
 const Header = () => {
   return (
@@ -61,7 +62,9 @@ const Header = () => {
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
             <li>
-              <a>Item 1</a>
+              <label for="my-modal-4" class="modal-button">
+                Contact
+              </label>
             </li>
             <li tabindex="0">
               <a>
@@ -94,6 +97,12 @@ const Header = () => {
           <a className="btn">Resume</a>
         </div>
       </div>
+      <input type="checkbox" id="my-modal-4" class="modal-toggle" />
+      <label for="my-modal-4" class="modal cursor-pointer">
+        <label class="modal-box relative" for="">
+          <ContactForm></ContactForm>
+        </label>
+      </label>
     </div>
   );
 };
