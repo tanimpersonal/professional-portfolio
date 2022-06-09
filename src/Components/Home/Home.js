@@ -4,6 +4,8 @@ import tanim from "../../Assets/Images/Blue Yellow Simple Professional  Instagra
 import TiltSkill from "../TiltSkill/TiltSkill";
 import Tilt from "react-parallax-tilt";
 import Advantage from "../Advantage/Advantage";
+import Skill from "../Skills/Skill";
+import ServiceTab from "../ServiceTab/ServiceTab";
 const Home = () => {
   return (
     <section className="lg:px-16">
@@ -52,9 +54,11 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="advantage-skill flex justify-between">
+      <div className="advantage-skill py-20 items-center grid lg:grid-cols-2 grid-cols-1 justify-between">
         <Advantage></Advantage>
+        <Skill></Skill>
       </div>
+      <ServiceTab></ServiceTab>
     </section>
   );
 };
