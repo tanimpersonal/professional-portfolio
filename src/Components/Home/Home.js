@@ -3,9 +3,10 @@ import TypeAnimation from "react-type-animation";
 import tanim from "../../Assets/Images/Blue Yellow Simple Professional  Instagram Profile Picture.png";
 import TiltSkill from "../TiltSkill/TiltSkill";
 import Tilt from "react-parallax-tilt";
+import Advantage from "../Advantage/Advantage";
 const Home = () => {
   return (
-    <section>
+    <section className="lg:px-16">
       <div
         style={{
           backgroundImage: `url(${require("../../Assets/Images/line-2.png")})`,
@@ -15,7 +16,7 @@ const Home = () => {
         }}
         className="h-screen w-full lg:w-auto"
       >
-        <div className="text-and-image grid lg:grid-cols-2 lg:gap-96 gap-20 items-center pt-40 lg:pt-40 px-16">
+        <div className="text-and-image grid lg:grid-cols-2 lg:gap-96 gap-20 items-center pt-40 px-16 lg:px-0 lg:pt-40">
           <div className="text">
             <h1 className="text-7xl font-bold">Hello,</h1>
             <h1 className="lg:text-7xl text-5xl font-bold">I'm Tanim.</h1>
@@ -50,6 +51,9 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="advantage-skill flex justify-between">
+        <Advantage></Advantage>
       </div>
     </section>
   );
