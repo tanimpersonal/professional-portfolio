@@ -6,6 +6,8 @@ import Tilt from "react-parallax-tilt";
 import Advantage from "../Advantage/Advantage";
 import Skill from "../Skills/Skill";
 import ServiceTab from "../ServiceTab/ServiceTab";
+import RecentWork from "../RecentWork/RecentWork";
+import climbing from "../../Assets/Images/Logos/climbing.png";
 const Home = () => {
   return (
     <section className="lg:px-16">
@@ -59,6 +61,27 @@ const Home = () => {
         <Skill></Skill>
       </div>
       <ServiceTab></ServiceTab>
+      <div className="recent-work py-40">
+        <div className="text flex justify-between items-center my-5">
+          <div className="left">
+            <h1 className="text-">Recent Work</h1>
+            <p>
+              My recent works offer you to look how good I'm and what can you
+              expect from me. Please take a look!
+            </p>
+          </div>
+          <div className="tracking h-52 w-52 relative bg-slate-700 rounded-full">
+            <div className="inner h-40 w-40 absolute top-0 bottom-0 right-0 left-0 m-auto rounded-full bg-slate-300">
+              <img
+                className="w-40 p-8 absolute top-0 bottom-0 right-0 left-0 m-auto"
+                src={climbing}
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <RecentWork></RecentWork>
+      </div>
     </section>
   );
 };
