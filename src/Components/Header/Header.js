@@ -28,13 +28,11 @@ const Header = () => {
             <ul
               tabindex="0"
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
-              <li>
-                <a>Item 3</a>
-              </li>
-            </ul>
+            ></ul>
           </div>
-          <a className="btn btn-ghost normal-case text-xl">Tanim</a>
+          <div className="my-link lg:ml-0 ml-[-12px]">
+            <a className="btn btn-ghost normal-case text-xl">Tanim</a>
+          </div>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal p-0">
@@ -56,8 +54,8 @@ const Header = () => {
         </div>
       </div>
       <input type="checkbox" id="my-modal-4" class="modal-toggle" />
-      <label for="my-modal-4" class="modal cursor-pointer">
-        <label class="modal-box relative" for="">
+      <label for="my-modal-4" class="modal  cursor-pointer">
+        <label class="modal-box bg-black relative" for="">
           <ContactForm></ContactForm>
         </label>
       </label>
