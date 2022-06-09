@@ -1,27 +1,19 @@
+import { useForm } from "@formspree/react";
 import React from "react";
 
 const Footer = () => {
+  const [state, handleSubmit] = useForm("xeqndkdd");
+
   return (
-    <footer class="footer min-h-[100vh] p-10 bg-base-200 text-base-content">
+    <footer class="footer p-10 bg-black text-white">
       <div>
         <span class="footer-title">Services</span>
-        <a class="link link-hover">Branding</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
       </div>
       <div>
         <span class="footer-title">Company</span>
-        <a class="link link-hover">About us</a>
-        <a class="link link-hover">Contact</a>
-        <a class="link link-hover">Jobs</a>
-        <a class="link link-hover">Press kit</a>
       </div>
       <div>
         <span class="footer-title">Legal</span>
-        <a class="link link-hover">Terms of use</a>
-        <a class="link link-hover">Privacy policy</a>
-        <a class="link link-hover">Cookie policy</a>
       </div>
       <div>
         <span class="footer-title">Newsletter</span>
@@ -30,14 +22,20 @@ const Footer = () => {
             <span class="label-text">Enter your email address</span>
           </label>
           <div class="relative">
-            <input
-              type="text"
-              placeholder="username@site.com"
-              class="input input-bordered w-full pr-16"
-            />
-            <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">
-              Subscribe
-            </button>
+            <form onSubmit={handleSubmit}>
+              <input
+                type="email"
+                name="email"
+                placeholder="username@site.com"
+                class="input input-bordered text-black w-full pr-16"
+              />
+              <input
+                type="submit"
+                class="btn btn-primary absolute top-0 right-0 rounded-l-none"
+              />
+            </form>
+
+            {state.succeeded && <p>Submitted</p>}
           </div>
         </div>
       </div>
