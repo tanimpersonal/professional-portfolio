@@ -5,7 +5,7 @@ const Footer = () => {
   const [state, handleSubmit] = useForm("xeqndkdd");
 
   return (
-    <footer class="footer p-10 bg-black text-white">
+    <footer class="footer p-10 bg-transparent text-white">
       <div>
         <span class="footer-title">Services</span>
       </div>
