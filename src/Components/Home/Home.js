@@ -9,6 +9,7 @@ import ServiceTab from "../ServiceTab/ServiceTab";
 import RecentWork from "../RecentWork/RecentWork";
 import climbing from "../../Assets/Images/Logos/climbing.png";
 import Contact from "../Contact/Contact";
+import useData from "../../Utility/useData";
 
 const Home = () => {
   return (

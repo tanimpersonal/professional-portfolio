@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "project_name": "Influencer Products",
+    "technology": ["HTML", "CSS", "Tailwind"],
+    "github": "https://github.com/tanimpersonal/influencer",
+    "live_link": "https://tanimpersonal.github.io/influencer/",
+    "image": "https://i.ibb.co/DtTtXhG/influencer.png"
+  },
+  {
+    "id": 2,
+    "project_name": "Panda",
+    "technology": ["HTML", "CSS", "Bootstrap"],
+
+    "github": "https://github.com/tanimpersonal/e-commerce",
+    "live_link": "https://tanimpersonal.github.io/e-commerce/",
+    "image": "https://i.ibb.co/M22pNML/panda.png"
+  },
+  {
+    "id": 3,
+    "project_name": "Convention Center",
+    "technology": ["HTML", "CSS", "Bootstrap"],
+
+    "github": "https://github.com/tanimpersonal/ti-convention",
+    "live_link": "https://tanimpersonal.github.io/ti-convention/",
+    "image": "https://i.ibb.co/RQq7fbq/convention.png"
+  },
+  {
+    "id": 4,
+    "project_name": "Coinbase Lite",
+    "technology": ["HTML", "CSS", "Tailwind", "React", "React-Router"],
+
+    "github": "https://github.com/tanimpersonal/coinbase-lite",
+    "live_link": "https://fokiracoinbase.netlify.app/",
+    "image": "https://i.ibb.co/gz15vCH/crypto.png"
+  },
+  {
+    "id": 5,
+    "project_name": "Simple Bank",
+    "technology": ["HTML", "CSS", "Bootstrap", "JS"],
+
+    "github": "https://github.com/tanimpersonal/bank-deposit-js",
+    "live_link": "https://tanimpersonal.github.io/bank-deposit-js/deposit.html",
+    "image": "https://i.ibb.co/4MfVc88/bank.png"
+  },
+  {
+    "id": 6,
+    "project_name": "Photography",
+    "technology": [
+      "HTML",
+      "CSS",
+      "React",
+      "React Hooks",
+      "React Router",
+      "Firebase",
+      "Node",
+      "Express",
+      "MongoDB"
+    ],
+
+    "github": "https://github.com/tanimpersonal/yeasmin-rao",
+    "live_link": "https://assignment-10-41ce1.web.app/",
+    "image": "https://i.ibb.co/1RXwF1R/yeasmin.png"
+  }
+]
