@@ -1,6 +1,7 @@
 import React from "react";
 import ContactForm from "../ContactForm/ContactForm";
 import file from "../../Assets/Resume/Tanim Resume.pdf";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
 const Header = () => {
@@ -38,7 +39,12 @@ const Header = () => {
             </ul>
           </div>
           <div className="my-link lg:ml-0 ml-[-20px]">
-            <a className="btn btn-ghost normal-case text-xl">Tanim</a>
+            <Link
+              to="/"
+              className="btn btn-ghost normal-case text-xl lg:text-3xl"
+            >
+              Tanim
+            </Link>
           </div>
         </div>
         <div className="navbar-center hidden lg:flex">
@@ -47,6 +53,13 @@ const Header = () => {
               <label for="my-modal-4" class="modal-button">
                 Contact
               </label>
+            </li>
+            <li>
+              <Link to="/blogs">
+                <label for="my-modal-4" class="modal-button">
+                  Blogs
+                </label>
+              </Link>
             </li>
           </ul>
         </div>

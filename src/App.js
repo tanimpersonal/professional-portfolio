@@ -8,6 +8,7 @@ import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import AnimatedCursor from "react-animated-cursor";
 import SingleProject from "./Components/SingleProject/SingleProject";
+import Blogs from "./Components/Blogs/Blogs";
 function App() {
   const particlesInit = async (main) => {
     console.log(main);
@@ -545,6 +546,7 @@ function App() {
         <Route path="/" element={<Home></Home>}></Route>
         <Route path="/contact" element={<ContactForm></ContactForm>}></Route>
         <Route path="/:id" element={<SingleProject></SingleProject>}></Route>
+        <Route path="/blogs" element={<Blogs></Blogs>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
