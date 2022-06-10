@@ -6,6 +6,7 @@ import Header from "./Components/Header/Header";
 import Home from "./Components/Home/Home";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import AnimatedCursor from "react-animated-cursor";
 function App() {
   const particlesInit = async (main) => {
     console.log(main);
@@ -13,6 +14,7 @@ function App() {
   };
   return (
     <div className="text-white">
+      <AnimatedCursor></AnimatedCursor>
       <Particles
         height="100px"
         id="tsparticles"
