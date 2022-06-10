@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {} from "@fortawesome/free-regular-svg-icons";
+
 import {
   faBezierCurve,
   faCode,
@@ -9,6 +10,8 @@ import {
   faPenNib,
   faPlug,
   faGear,
+  faUserGraduate,
+  faBookOpenReader,
 } from "@fortawesome/free-solid-svg-icons";
 import photoshop from "../../Assets/Images/Logos/photoshop.png";
 import illustrator from "../../Assets/Images/Logos/illustrator.png";
@@ -17,23 +20,34 @@ const ServiceTab = () => {
   const [development, setDevelopment] = useState(true);
   const [design, setDesign] = useState(false);
   const [wordpress, setWordpress] = useState(false);
+  const [education, setEducation] = useState(false);
   const handleDevelopment = () => {
     setDesign(false);
     setWordpress(false);
+    setEducation(false);
     setDevelopment(true);
   };
   const handleDesign = () => {
     setDesign(true);
     setWordpress(false);
+    setEducation(false);
+
     setDevelopment(false);
   };
   const handleWordpress = () => {
     setDesign(false);
+    setEducation(false);
     setWordpress(true);
     setDevelopment(false);
   };
+  const handleEducation = () => {
+    setEducation(true);
+    setDesign(false);
+    setWordpress(false);
+    setDevelopment(false);
+  };
   return (
-    <div>
+    <div data-aos="fade-up">
       <Tabs>
         <TabList className="mb-5 lg:grid-cols-3 grid-cols-2  text-center">
           <Tab
@@ -56,10 +70,16 @@ const ServiceTab = () => {
           >
             Design
           </Tab>
+          <Tab
+            onClick={handleEducation}
+            className={`btn text-2xl mr-5 ${education && "btn-outline"}`}
+          >
+            Education
+          </Tab>
         </TabList>
 
         <TabPanel>
-          <div className="inner grid lg:grid-cols-3 grid-cols-1 gap-2 text-center">
+          <div className="animate__animated animate__fadeInUp inner grid lg:grid-cols-3 grid-cols-1 gap-2 text-center">
             <div className="frontend rounded-xl bg-black text-white py-20 px-5">
               <div className="icon  rounded-full bg-slate-600 p-16 inline-block relative transition-all duration-1000 hover:bg-slate-700">
                 <FontAwesomeIcon
@@ -104,7 +124,7 @@ const ServiceTab = () => {
         </TabPanel>
 
         <TabPanel>
-          <div className="inner grid lg:grid-cols-3 grid-cols-1 gap-2 text-center">
+          <div className="inner animate__animated animate__fadeInUp grid lg:grid-cols-3 grid-cols-1 gap-2 text-center">
             <div className="frontend rounded-xl bg-black text-white py-20 px-5">
               <div className="icon  rounded-full bg-slate-600 p-16 inline-block relative transition-all duration-1000 hover:bg-slate-700">
                 <FontAwesomeIcon
@@ -149,7 +169,7 @@ const ServiceTab = () => {
         </TabPanel>
 
         <TabPanel>
-          <div className="inner grid lg:grid-cols-3 grid-cols-1 gap-2 text-center">
+          <div className="inner animate__animated animate__fadeInUp grid lg:grid-cols-3 grid-cols-1 gap-2 text-center">
             <div className="frontend rounded-xl bg-black text-white py-20 px-5">
               <div className="icon  rounded-full bg-slate-600 p-16 inline-block relative transition-all duration-1000 hover:bg-slate-700">
                 <img
@@ -191,6 +211,37 @@ const ServiceTab = () => {
                 I'm expertise to grab the design, the exact calculation from the
                 UI file on figma. I can also implement the exact thing on
                 Website
+              </p>
+            </div>
+          </div>
+        </TabPanel>
+
+        <TabPanel>
+          <div className="inner grid animate__animated animate__fadeInUp lg:grid-cols-2 grid-cols-1 gap-2 text-center lg:px-48">
+            <div className="frontend rounded-xl bg-black text-white py-20 px-5 ">
+              <div className="icon  rounded-full bg-slate-600 p-16 inline-block relative transition-all duration-1000 hover:bg-slate-700">
+                <FontAwesomeIcon
+                  className="text-7xl left-0 right-0 top-0 bottom-0 m-auto absolute "
+                  icon={faUserGraduate}
+                ></FontAwesomeIcon>
+              </div>
+              <h1 className="text-3xl my-4">CSE</h1>
+              <p>
+                I'm currently a BSc in CSE second year student at Daffodil
+                Institute of IT. Expected graduation date is 3 years left.
+              </p>
+            </div>
+            <div className="frameworks rounded-xl bg-black text-white py-20 px-5">
+              <div className="icon  rounded-full bg-slate-600 p-16 inline-block relative transition-all duration-1000 hover:bg-slate-700">
+                <FontAwesomeIcon
+                  className="text-7xl left-0 right-0 top-0 bottom-0 m-auto absolute "
+                  icon={faBookOpenReader}
+                ></FontAwesomeIcon>
+              </div>
+              <h1 className="text-3xl my-4">HSC</h1>
+              <p>
+                I had completed my HSC in Science department from Dhaka College
+                in 2019. My grade was GPA: 5.00.
               </p>
             </div>
           </div>

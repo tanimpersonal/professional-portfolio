@@ -44,7 +44,7 @@ const Home = () => {
               />
             </div>
           </div>
-          <div className="image lg:w-96 relative ">
+          <div className="image animate__animated animate__fadeInRightBig animate__delay-1s lg:w-96 relative ">
             <img
               className="lg:w-100 mr-12 ml-[-5px] lg:mr-0 lg:ml-[0px]
           "
@@ -65,7 +65,10 @@ const Home = () => {
       </div>
       <ServiceTab></ServiceTab>
       <div className="recent-work my-5">
-        <div className="text flex flex-wrap justify-between items-center my-5">
+        <div
+          data-aos="fade-right"
+          className="text flex flex-wrap justify-between items-center my-5"
+        >
           <div className="left">
             <h1 className="text-7xl">Recent Work</h1>
             <p className="text-lg w-80 mt-5">
@@ -73,8 +76,12 @@ const Home = () => {
               expect from me. Please take a look!
             </p>
           </div>
-          <div className="tracking h-52 w-52 lg:ml-0 ml-20 lg:mt-0 mt-5  relative bg-slate-700 rounded-full">
-            <div className="inner h-40 w-40  absolute top-0 bottom-0 right-0 left-0 m-auto rounded-full bg-slate-300">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            className="tracking h-52 w-52 lg:ml-0 ml-20 lg:mt-0 mt-5  relative bg-slate-700 rounded-full"
+          >
+            <div className="animate__animated animate__pulse animate__infinite	infinite inner h-40 w-40  absolute top-0 bottom-0 right-0 left-0 m-auto rounded-full bg-slate-300">
               <img
                 className="w-40 p-8 absolute top-0 bottom-0 right-0 left-0 m-auto"
                 src={climbing}

@@ -17,7 +17,7 @@ const RecentWork = () => {
     setModal({ id: id });
   };
   return (
-    <div>
+    <div data-aos="fade-down-right" data-aos-duration="1500">
       <input type="checkbox" id="my-modal-3" className="modal-toggle" />
       {modal && <SingleProject id={modal?.id} />}
       <div className="carousel w-full">

@@ -4,6 +4,7 @@ import file from "../../Assets/Resume/Tanim Resume.pdf";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDownload } from "@fortawesome/free-solid-svg-icons";
+
 const Header = () => {
   return (
     <div>
@@ -73,6 +74,7 @@ const Header = () => {
           </a>
         </div>
       </div>
+
       <input type="checkbox" id="my-modal-4" className="modal-toggle" />
       <label htmlFor="my-modal-4" className="modal  cursor-pointer">
         <label className="modal-box bg-black relative" htmlFor="">
