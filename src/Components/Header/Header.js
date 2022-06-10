@@ -37,7 +37,7 @@ const Header = () => {
               </li>
             </ul>
           </div>
-          <div className="my-link lg:ml-0 ml-[-12px]">
+          <div className="my-link lg:ml-0 ml-[-20px]">
             <a className="btn btn-ghost normal-case text-xl">Tanim</a>
           </div>
         </div>

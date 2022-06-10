@@ -26,7 +26,7 @@ const Home = () => {
           <div className="text">
             <h1 className="text-7xl font-bold">Hello,</h1>
             <h1 className="lg:text-7xl text-5xl font-bold">I'm Tanim.</h1>
-            <div className="lg:w-full w-20 mt-5 lg:mt-0">
+            <div className="lg:w-full w-full mt-5 lg:mt-0">
               <TypeAnimation
                 cursor={true}
                 sequence={[
@@ -34,7 +34,7 @@ const Home = () => {
                   2000,
                   "Web Designer",
                   2000,
-                  "Wordpress Developer",
+                  "WP Developer",
                   2000,
                 ]}
                 wrapper="h2"
@@ -45,12 +45,12 @@ const Home = () => {
           </div>
           <div className="image lg:w-96 relative ">
             <img
-              className="lg:w-100 w-100 mr-12 ml-[-30px] lg:mr-0 lg:ml-[0px]
+              className="lg:w-100 mr-12 ml-[-5px] lg:mr-0 lg:ml-[0px]
           "
               src={tanim}
               alt=""
             />
-            <div className="tilt absolute bottom-10 left-5 lg:left-2">
+            <div className="tilt absolute bottom-5 left-5 lg:left-2">
               <Tilt reset={true}>
                 <TiltSkill></TiltSkill>
               </Tilt>
