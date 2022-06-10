@@ -11,7 +11,7 @@ const Contact = () => {
           <h1>Send me a message and make something together.</h1>
         </div>
         <div className="button">
-          <label for="my-modal-4" class="btn modal-button">
+          <label htmlFor="my-modal-4" className="btn modal-button">
             CONTACT ME!
           </label>
         </div>

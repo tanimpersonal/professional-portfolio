@@ -5,15 +5,15 @@ const SingleProject = ({ id }) => {
   const [projects, setProjects] = useData();
   const project = projects.find((project) => project.id === id);
   return (
-    <div class="modal">
-      <div class="modal-box bg-black relative">
+    <div className="modal">
+      <div className="modal-box bg-black relative">
         <label
-          for="my-modal-3"
-          class="btn btn-sm btn-circle absolute right-2 top-2"
+          htmlFor="my-modal-3"
+          className="btn btn-sm btn-circle absolute right-2 top-2"
         >
           ✕
         </label>
-        <h3 class="text-lg font-bold mb-10">{project?.project_name}</h3>
+        <h3 className="text-lg font-bold mb-10">{project?.project_name}</h3>
 
         <div className="links">
           <a

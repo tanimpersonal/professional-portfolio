@@ -11,14 +11,14 @@ const ContactForm = () => {
           type="text"
           name="name"
           placeholder="Your name"
-          class="input w-full max-w-xs mb-2"
+          className="input w-full max-w-xs mb-2"
           required
         />
         <input
           type="email"
           name="email"
           placeholder="Your email"
-          class="input w-full max-w-xs mb-2"
+          className="input w-full max-w-xs mb-2"
           required
         />
         <textarea

@@ -5,33 +5,33 @@ const Footer = () => {
   const [state, handleSubmit] = useForm("xeqndkdd");
 
   return (
-    <footer class="footer p-10 bg-transparent text-white">
+    <footer className="footer p-10 bg-transparent text-white">
       <div>
-        <span class="footer-title">Services</span>
+        <span className="footer-title">Services</span>
       </div>
       <div>
-        <span class="footer-title">Company</span>
+        <span className="footer-title">Company</span>
       </div>
       <div>
-        <span class="footer-title">Legal</span>
+        <span className="footer-title">Legal</span>
       </div>
       <div>
-        <span class="footer-title">Newsletter</span>
-        <div class="form-control w-80">
-          <label class="label">
-            <span class="label-text">Enter your email address</span>
+        <span className="footer-title">Newsletter</span>
+        <div className="form-control w-80">
+          <label className="label">
+            <span className="label-text">Enter your email address</span>
           </label>
-          <div class="relative">
+          <div className="relative">
             <form onSubmit={handleSubmit}>
               <input
                 type="email"
                 name="email"
                 placeholder="username@site.com"
-                class="input input-bordered text-black w-full pr-16"
+                className="input input-bordered text-black w-full pr-16"
               />
               <input
                 type="submit"
-                class="btn btn-primary absolute top-0 right-0 rounded-l-none"
+                className="btn btn-primary absolute top-0 right-0 rounded-l-none"
               />
             </form>
 
