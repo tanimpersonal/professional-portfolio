@@ -14,7 +14,7 @@ import photoshop from "../../Assets/Images/Logos/photoshop.png";
 import illustrator from "../../Assets/Images/Logos/illustrator.png";
 import figma from "../../Assets/Images/Logos/figma.png";
 const ServiceTab = () => {
-  const [development, setDevelopment] = useState(false);
+  const [development, setDevelopment] = useState(true);
   const [design, setDesign] = useState(false);
   const [wordpress, setWordpress] = useState(false);
   const handleDevelopment = () => {

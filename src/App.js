@@ -48,7 +48,7 @@ function App() {
           },
           detectRetina: true,
           duration: 0,
-          fpsLimit: 120,
+          fpsLimit: 60,
           interactivity: {
             detectsOn: "window",
             events: {
@@ -64,9 +64,9 @@ function App() {
               },
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: "none",
                 parallax: {
-                  enable: false,
+                  enable: true,
                   force: 2,
                   smooth: 10,
                 },
