@@ -6,37 +6,26 @@ const Footer = () => {
 
   return (
     <footer className="footer p-10 bg-transparent text-white">
-      <div>
-        <span className="footer-title">Services</span>
-      </div>
-      <div>
-        <span className="footer-title">Company</span>
-      </div>
-      <div>
-        <span className="footer-title">Legal</span>
-      </div>
-      <div>
-        <span className="footer-title">Newsletter</span>
-        <div className="form-control w-80">
-          <label className="label">
-            <span className="label-text">Enter your email address</span>
-          </label>
-          <div className="relative">
-            <form onSubmit={handleSubmit}>
-              <input
-                type="email"
-                name="email"
-                placeholder="username@site.com"
-                className="input input-bordered text-black w-full pr-16"
-              />
-              <input
-                type="submit"
-                className="btn btn-primary absolute top-0 right-0 rounded-l-none"
-              />
-            </form>
+      <span className="footer-title">Newsletter</span>
+      <div className="form-control w-80">
+        <label className="label">
+          <span className="label-text">Enter your email address</span>
+        </label>
+        <div className="relative">
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              name="email"
+              placeholder="username@site.com"
+              className="input input-bordered text-black w-full pr-16"
+            />
+            <input
+              type="submit"
+              className="btn btn-primary absolute top-0 right-0 rounded-l-none"
+            />
+          </form>
 
-            {state.succeeded && <p>Submitted</p>}
-          </div>
+          {state.succeeded && <p>Submitted</p>}
         </div>
       </div>
     </footer>
