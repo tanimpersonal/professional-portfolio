@@ -72,7 +72,9 @@ const ServiceTab = () => {
           </Tab>
           <Tab
             onClick={handleEducation}
-            className={`btn text-2xl mr-5 ${education && "btn-outline"}`}
+            className={`btn text-2xl mr-5 mt-5 lg:mt-0 ${
+              education && "btn-outline"
+            }`}
           >
             Education
           </Tab>
