@@ -5,7 +5,7 @@ import VisibilitySensor from "react-visibility-sensor";
 const Skill = () => {
   return (
     <div className="lg:ml-2 ml-5">
-      <h1>My Skills</h1>
+      <h1 className="text-4xl font-bold">My Skills</h1>
       <p>
         Refining my ability everyday. Polishing myself in every possible way
       </p>

@@ -26,7 +26,7 @@ const Home = () => {
           <div className="text">
             <h1 className="text-7xl font-bold">Hello,</h1>
             <h1 className="lg:text-7xl text-5xl font-bold">I'm Tanim.</h1>
-            <div style={{ width: "20em" }}>
+            <div className="lg:w-full w-20 mt-5 lg:mt-0">
               <TypeAnimation
                 cursor={true}
                 sequence={[

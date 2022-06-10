@@ -25,10 +25,17 @@ const Header = () => {
                 />
               </svg>
             </label>
+
             <ul
               tabindex="0"
               className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            ></ul>
+            >
+              <li>
+                <label for="my-modal-4" class="modal-button bg-black">
+                  Contact
+                </label>
+              </li>
+            </ul>
           </div>
           <div className="my-link lg:ml-0 ml-[-12px]">
             <a className="btn btn-ghost normal-case text-xl">Tanim</a>
