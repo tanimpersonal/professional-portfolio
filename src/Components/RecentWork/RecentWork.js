@@ -17,10 +17,14 @@ const RecentWork = () => {
     setModal({ id: id });
   };
   return (
-    <div data-aos="fade-down-right" data-aos-duration="1500">
+    <div>
       <input type="checkbox" id="my-modal-3" className="modal-toggle" />
       {modal && <SingleProject id={modal?.id} />}
-      <div className="carousel w-full">
+      <div
+        data-aos="fade-down-right"
+        data-aos-duration="1500"
+        className="carousel w-full"
+      >
         <div id="slide1" className="carousel-item relative w-full">
           <div className="project flex flex-wrap lg:flex-nowrap gap-2">
             <div className="first px-5 py-5 shadow-lg my-3 mx-3 rounded-xl">
