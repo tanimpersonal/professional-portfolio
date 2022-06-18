@@ -56,6 +56,11 @@ const Header = () => {
               </label>
             </li>
             <li>
+              <a href="#projects">
+                <label>Projects</label>
+              </a>
+            </li>
+            <li>
               <Link to="/blogs">
                 <label htmlFor="my-modal-4" className="modal-button">
                   Blogs

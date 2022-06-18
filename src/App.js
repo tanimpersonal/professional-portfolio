@@ -558,7 +558,6 @@ function App() {
         <Route path="/blogs" element={<Blogs></Blogs>}></Route>
       </Routes>
       <Footer></Footer>
-      <Lines />
     </div>
   );
 }

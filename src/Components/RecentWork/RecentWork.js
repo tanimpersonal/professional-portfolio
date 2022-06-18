@@ -17,7 +17,7 @@ const RecentWork = () => {
     setModal({ id: id });
   };
   return (
-    <div>
+    <div id="projects">
       <input type="checkbox" id="my-modal-3" className="modal-toggle" />
       {modal && <SingleProject id={modal?.id} />}
       <div
